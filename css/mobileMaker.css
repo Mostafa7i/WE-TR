@@ -224,6 +224,8 @@ li a:hover {
   li a.active {
     background: none;
     color: var(--textColorBlue);
+    font-weight: 800;
+    font-size: 20px;
   }
   #check:checked ~ ul {
     left: 0;
@@ -751,12 +753,9 @@ footer div img{
   outline: 3px solid black;
   margin-top: 20px;
 }
-.imgftth{
-  /* background: url(../images/notEligible.jpg); */
-  background-size: cover;
-  background-position: center;
+.imgftth , .imgftthB{
+
   width: 290px;
-  /* height: 200px; */
 }
 
 #timeOutL{
