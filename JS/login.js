@@ -21,12 +21,7 @@ let getPassword = localStorage.getItem("password")
 
 
 
-// function run(){
-//   if(localStorage.getItem("username")){
-//       window.location = "HomePage.html";
-//   }
-// }
-// run()
+
 
 
 
@@ -76,6 +71,12 @@ loginSubmit.addEventListener("click", function (e) {
   }
 });
 
+function run(){
+  if(localStorage.getItem("username")){
+      window.location = "HomePage.html";
+  }
+}
+run()
 
 function togglePasswordVisibility() {
   if (password.type === "password") {
