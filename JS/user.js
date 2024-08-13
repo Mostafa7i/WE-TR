@@ -36,13 +36,13 @@ let logoutBtn = document.querySelector("#logout")
 //     location.reload()
 //   } , 700000)
   
-//   if(localStorage.getItem("username")){
+  if(localStorage.getItem("username")){
      
-//   }else{
-//     window.location = "index.html"
-//   }
-// }
-// run()
+  }else{
+    window.location = "HomePage.html"
+  }
+}
+run()
 
 // let Exit = setTimeout (function(){
 //   location.reload()
