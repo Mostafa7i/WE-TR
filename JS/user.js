@@ -36,10 +36,9 @@ let logoutBtn = document.querySelector("#logout")
 //     location.reload()
 //   } , 700000)
   
+function run(){
   if(localStorage.getItem("username")){
-     
-  }else{
-    window.location = "HomePage.html"
+      window.location = "HomePage.html";
   }
 }
 run()
