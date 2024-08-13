@@ -36,12 +36,6 @@ let logoutBtn = document.querySelector("#logout")
 //     location.reload()
 //   } , 700000)
   
-// function run(){
-//   if(localStorage.getItem("username")){
-//       window.location = "HomePage.html";
-//   }
-// }
-// run()
 
 // let Exit = setTimeout (function(){
 //   location.reload()
@@ -49,6 +43,14 @@ let logoutBtn = document.querySelector("#logout")
 //   window.location = "index.html"
 // } , 5000)
 
+function run(){
+  if(localStorage.getItem("username")){
+     
+  }else{
+    window.location = "HomePage.html"
+  }
+}
+run()
 
 /////////////////////////////////////////////////////////////////////////////////
 function log(){
