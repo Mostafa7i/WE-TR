@@ -621,7 +621,7 @@ footer div img{
   display: none;
   border: 1px solid black;
   padding: 5px;
-  width: fit-content;
+  /* width: fit-content; */
   margin: 10px 0;
 
 }
