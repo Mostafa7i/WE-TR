@@ -21,12 +21,12 @@ let getPassword = localStorage.getItem("password")
 
 
 
-function run(){
-  if(localStorage.getItem("username")){
-      window.location = "HomePage.html";
-  }
-}
-run()
+// function run(){
+//   if(localStorage.getItem("username")){
+//       window.location = "HomePage.html";
+//   }
+// }
+// run()
 
 
 
