@@ -14,6 +14,7 @@
 //   }
 // }, 1000)
 
+localStorage.clear()
 
 
 let userinfo = document.querySelector("#user_info")
