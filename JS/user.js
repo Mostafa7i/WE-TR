@@ -14,8 +14,6 @@
 //   }
 // }, 1000)
 
-localStorage.clear()
-
 
 let userinfo = document.querySelector("#user_info")
 let userData = document.querySelector("#user")
