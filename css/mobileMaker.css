@@ -19,8 +19,45 @@ body{
   --minColor : linear-gradient(  to right,  rgb(21, 3, 113),  rgb(76, 0, 255),  rgb(96, 18, 141));
   --secondColor : rgb(76, 0, 255);
   --textColorBlue : #0082e6 ;
+  --mode : linear-gradient(to top,  #7d7e7d 0%,#0e0e0e 100%);
+  --textmode : #fff;
+
+  ;
+}
+.darkmode{
+  color: var(--textmode);
+  background: var(--mode);
+}
+#theme-switch{
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  border-radius: 50%;
+  border: 0;
+  display: flex;
+  background-color: #9191915c;
+  justify-content: center;
+  align-items: center;
+
+}
+#theme-switch i{
+  fill: #000000;
+
+}
+#theme-switch i:last-child{
+  display: none;
+  
+}
+.darkmode #theme-switch i:first-child{
+  display: none;
+}
+.darkmode #theme-switch i:last-child {
+  display: block;
+  color: yellow;
+ 
 }
 
+/* ///////////////////////////////////////////////// */
 .UpDown{
   position: fixed;
   width: fit-content;
@@ -71,6 +108,7 @@ body{
   height: 85%;
   padding: 10px;
   overflow: hidden;
+  color: #9600e6;
   overflow-y: scroll;
 
 }
@@ -253,6 +291,9 @@ header{
   outline: 2px solid #ddd;
   padding: 20px;
 }
+.hedarbox{
+  display: flex; flex-direction: row-reverse; align-items: center; justify-content: space-between; width: 50%;
+}
 /* ------------------------------------------------------------------- */
 
 .container{
@@ -268,7 +309,7 @@ header{
   width: fit-content;
 }
 
-.styleBox{
+ .styleBox{
   width: fit-content;
    padding: 5px; 
    background: linear-gradient(
@@ -300,14 +341,28 @@ header{
 p{
   text-align: right;
 }
+.content{
+  color: #000000;
 
+
+
+}
+.content > div{
+  background-color: #ffffff7d;
+  border-radius: 5px;
+  padding: 0 5px;
+
+
+}
 
 .hidden{
 display: none;
 width: fit-content;
-border: 2px solid #ddd;
-padding: 5px;
-background-color: #f1f0f0; 
+/* border: 2px solid #ddd; */
+padding: 4px 0;
+/* background-color: #f1f0f0;  */
+color: #fff;
+/* text-shadow: 1px 1px 1px black ; */
 border-radius: 5px;
 margin: auto;
 }
@@ -387,6 +442,21 @@ nav ul li a {
     padding: 10px;
     text-align: center;
   }
+  .hedarbox{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    width: 100%;
+  }
+  .b1{
+    flex-direction: column-reverse;
+  }
+  .b2{
+    
+    flex-direction: column-reverse;
+
+
+  }
   .container{
     font-size: 15px;
   }
@@ -436,13 +506,9 @@ display: none;
 border: 2px solid black;
 width: fit-content;
 padding: 2px;
-background-color: #e5cefa;
+/* background-color: #e5cefa; */
 }
 
-.cloAll{
-  background-color: #e5cefa;
-
-}
 
 .radio_tabs{
   display: flex;
@@ -544,11 +610,10 @@ height: 22px;
 
 
 .wrapper .content{
-width: 100%;
+width: fit-content;
 height: calc(100% - 70px);
 /* background: #ddd; */
 border-radius: 5px;
-padding: 18px;
 /* box-shadow: 0 0 2px rgba(0,0,0,0.1); */
 }
 
@@ -590,7 +655,6 @@ footer{
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 90px;
   background: var(--minColor)
 }
 footer p{
@@ -722,15 +786,7 @@ footer div img{
   top: -2px;
   left: 0;
 }
-.circl-2{
-  position: absolute;
-  background-color: greenyellow;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  
 
-}
 
 
 .con7 , .con8{
