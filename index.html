@@ -150,7 +150,8 @@ form input[type="submit"] {
           <section class="section-form">
             <h1>Login User</h1>
             <form>
-              <input type="text" placeholder="User Name" id="userName" />
+              <input  type="text" minlength="5" maxlength="16"  placeholder="Your Name" id="Name">
+              <input type="text" placeholder="Login User" id="userName" />
               <div class="check">
                 <input type="password" placeholder="Password" id="passward" />
                 <input title="Show passward" type="checkbox" id="show" onclick="togglePasswordVisibility()"/>
