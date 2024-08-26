@@ -14,6 +14,7 @@ let loginSubmit = document.querySelector("#sign-in");
 
 // /////////////
 let userName = document.querySelector('#userName')
+let Name = document.querySelector('#Name')
 let password = document.querySelector('#passward')
 
 let getUsername = localStorage.getItem("userName")
@@ -21,18 +22,29 @@ let getPassword = localStorage.getItem("password")
 
 
 
-
-
+function run(){
+  if(localStorage.getItem("username")){
+      window.location = "HomePage.html";
+  }
+}
+run()
 
 
 loginSubmit.addEventListener("click", function (e) {
   e.preventDefault();
-  if (userName.value === "" || password.value === "" ) {
+  if (userName.value === "" || password.value === "" || Name.value === "" ) {
     Swal.fire({
       title: "Warning!",
       text: "Please Fill Data",
       icon: "warning",
     });
+
+  }else if(Name.value.length <= 3 ){
+    Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "يجب ان لايقل الاسم عن اربعه احرف",
+          });
   } else {
     if (userName.value.trim() === "Ahmed" && password.value === "00328" ||
     userName.value.trim() === "mahmoudAli22" && password.value === "0722" ||
@@ -51,6 +63,9 @@ loginSubmit.addEventListener("click", function (e) {
     userName.value.trim() === "Mostafa.Eid" && password.value === "7396") {
       localStorage.setItem("code" , Math.floor(Math.random()*100))
       localStorage.setItem("username" , userName.value)
+      localStorage.setItem("name" , Name.value)
+
+
       setTimeout(() => {
         window.location = "HomePage.html";
       }, 1500);
@@ -61,22 +76,32 @@ loginSubmit.addEventListener("click", function (e) {
         showConfirmButton: false,
         timer: 2000,
       });
+      Name.style.border = "none"
+
     } else {
       Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: "User Name or Password is wrong!",
+        text: "Login User or Password is wrong!",
       });
     }
+    // d()
+
   }
 });
 
-function run(){
-  if(localStorage.getItem("username")){
-      window.location = "HomePage.html";
-  }
-}
-run()
+// function d(){
+//   if( ){
+//     
+//     // window.location = "index.html";
+
+
+//   }else if( Name.value.length >= 5){
+
+//   }else{
+
+//   }
+// }
 
 function togglePasswordVisibility() {
   if (password.type === "password") {
