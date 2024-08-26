@@ -1,5 +1,6 @@
 
 
+
 function search() {
   let searchBar = document.querySelector(".search-input").value.toUpperCase().trim();
   let productlist = document.querySelector(".product-list");
@@ -3276,8 +3277,9 @@ let pro = [
 
 
 ];
-lastUp= document.querySelector(".LastUp span")
-  lastUp.innerHTML = "3/4"
+lastUp = document.querySelector(".LastUp span")
+lastUp.style.color = "green"
+  lastUp.innerHTML = "4-3-2024"
 
 
 function drowItem() {
