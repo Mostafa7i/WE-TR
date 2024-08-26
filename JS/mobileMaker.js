@@ -1,5 +1,57 @@
+let userinfo = document.querySelector("#user_info")
+let userData = document.querySelector("#user")
+let Name = document.querySelector("#name")
+let links = document.querySelector("#links")
+
+let logoutBtn = document.querySelector("#logout")
+
+if(localStorage.getItem("name")){
+    userData.style.color ="yollow"
+    userData.style.fontWeight = "900"
+    userData.innerHTML = localStorage.getItem("name")
+    userData.style.textTransform = "capitalize"
+}
+logoutBtn.addEventListener("click" , logout)
+function logout(){
+  localStorage.clear()
+  window.location = "index.html"
+}
+////////////////////////////////////////////////////////////
+let darkmode = localStorage.getItem('darkmode')
+let themeSwitch = document.getElementById('theme-switch')
+let offcanvas = document.getElementById('offcanvas')
+let offcanvasbody = document.getElementById('offcanvasbody')
+let Header = document.getElementById('Header')
+let footer = document.getElementById('footer')
+
+const enableDarkmode = () =>{
+  document.body.classList.add('darkmode')
+  offcanvas.classList.add('darkmode')
+  offcanvasbody.classList.add('darkmode')
+  Header.classList.add('darkmode')
+  footer.classList.add('darkmode')
+  localStorage.setItem('darkmode' , "active")
+}
+const disableDarkmode = () =>{
+  document.body.classList.remove('darkmode')
+  offcanvas.classList.remove('darkmode')
+  offcanvasbody.classList.remove('darkmode')
+  Header.classList.remove('darkmode')
+  footer.classList.remove('darkmode')
+  localStorage.setItem('darkmode' , null)
+}
+if(darkmode === "active") enableDarkmode()
+
+themeSwitch.addEventListener('click' , () =>{
+  darkmode = localStorage.getItem('darkmode')
+  darkmode !== "active" ? enableDarkmode() : disableDarkmode();
+})
 
 
+
+
+
+/////////////////////////////////////////////////////////////////
 let outageA7mal = document.getElementById('outageA7mal')
 let outageNormaly = document.getElementById('outageNormaly')
 
@@ -35,6 +87,7 @@ function Outageb(){
 
   }
 }
+
 
 
 
@@ -513,8 +566,11 @@ q_42.addEventListener("click" , ch1)
 
     
     
+    let AllBox = document.getElementById('AllBox')
+    let resetAll = document.getElementById('resetAll').onclick = () =>{
+      window.location.reload()
 
-    
+    }
 
 
 
@@ -950,11 +1006,6 @@ FtthAll.forEach(function (item){
   
   }
   
-})
-
-let resetConc = document.getElementById('resetConc')
-resetConc.addEventListener('click' , function(){
-
 })
 
 
