@@ -30,13 +30,13 @@ if(localStorage.getItem("name")){
 
 
 
-onload = function AllTime(){
-  this.alert('يتم التحديث 94% .. ')
-  this.localStorage.clear()
-  this.location = "index.html"
+// onload = function AllTime(){
+//   this.alert('يتم التحديث 94% .. ')
+//   this.localStorage.clear()
+//   this.location = "index.html"
 
-}
-AllTime()
+// }
+// AllTime()
 
 //  function run(){
 //  setTimeout (function(){
