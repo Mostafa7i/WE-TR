@@ -20,7 +20,7 @@
   <body id="bd">
     <div class="loader"></div>
 <!-- ---------------------------------------------------------------------------------------------------- -->
-    <nav>
+    <nav id="header">
       <input type="checkbox" id="check" />
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
@@ -41,12 +41,16 @@
       <div class="container">
         <div class="parint" style="border: 2px solid #ddd;">
           <div class="div2">
-            <li><i class="fa-solid fa-circle-user userPhoto"></i><a href="#" id="user"></a></li>
           
               <div class="unit1">
-                <span class="mood">Mood &nbsp;&nbsp;<i class="fa-solid fa-cloud-moon"></i>
-                  <input type="checkbox" id="show"/>
-                </span>
+                <div>
+                  <li><i class="fa-solid fa-circle-user userPhoto"></i><a href="#" id="user"></a></li>
+
+                </div>
+                <button id="theme-switch">
+                  <i class="fa-solid fa-moon"></i>
+                  <i class="fa-solid fa-sun"></i>
+                </button>
                 <div>
                   مُضاف <span id="n"></span> سؤال
                   <i class="fa-solid fa-upload"></i>
@@ -65,7 +69,7 @@
                 </div>
                 <!--  -->
                 <div class="unit3">
-                  <div class="LastUp"><strong>Last update:</strong><span></span></div>
+                  <div class="LastUp"><strong>Last update:</strong> <span></span></div>
                 </div>
               </div>
               <!--  -->
@@ -74,7 +78,7 @@
           </div><!-- /div2 -->
           <div>
             <div class="box-input" >
-              <div class="search-box" id="box1" style="border: 2px solid #ddd;">
+              <div class="search-box" id="box1">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="search" placeholder="البحث بالسؤال" class="search-input" onkeyup="search()"/>
               </div><!-- /search-box -->
@@ -117,7 +121,7 @@
      
     </section>
 
-    <footer>
+    <footer id="footer">
       <p>&copy; Created By : Mostafa mahmoud</p>
       <div><img src="images/logo-no-background.png" alt="logo" /></div>
     </footer>
