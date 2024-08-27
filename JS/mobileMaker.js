@@ -976,8 +976,8 @@ AllMCU.forEach(function (item){
   MCU_Answer1.style.display = MCU1.checked  ? "block"  : "none"
   MCU_Answer2.style.display = MCU2.checked  ? "block" : "none"
 
-  MCUcolor1.style.color = MCU1.checked  ? "#c02be2"  : "black"
-  MCUcolor2.style.color = MCU2.checked  ? "#c02be2" : "black"
+  MCUcolor1.style.color = MCU1.checked  ? "#c02be2"  : "#fff"
+  MCUcolor2.style.color = MCU2.checked  ? "#c02be2" : "#fff"
 
     resetClear.style.display = MCU1.checked || MCU2.checked ? "block" : "none"
 
@@ -1001,8 +1001,8 @@ FtthAll.forEach(function (item){
     notEligible.style.display = notEligibleBtn.checked  ? "block"  : "none"
     Eligible.style.display = EligiblebBtn.checked  ? "block" : "none"
 
-    colorbtn1.style.color = notEligibleBtn.checked  ? "#c02be2"  : "black"
-    colorbtn22.style.color = EligiblebBtn.checked  ? "#c02be2"  : "black"
+    colorbtn1.style.color = notEligibleBtn.checked  ? "#c02be2"  : "#fff"
+    colorbtn22.style.color = EligiblebBtn.checked  ? "#c02be2"  : "#fff"
   
   }
   
@@ -1016,6 +1016,13 @@ function resetF(){
   colorbtn22.style.color = "black"
 }
 
+let dialogShow = document.getElementById('dialog-show')
+function About(){
+  dialogShow.showModal()
+}
+function closeAbout(){
+  dialogShow.close()
+}
 
 
 
