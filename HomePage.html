@@ -13,6 +13,39 @@
   </head>
   <body id="all">
     <div class="loader"></div>
+    <dialog id="dialog-show">
+      <h1><i class="fa-solid fa-gear fa-spin fa-2xs" style="color: #74C0FC;"></i> Developer</h1>
+      <p class="Deve"></p>
+      <div class="iconsAbout">
+        <a href="https://wa.me/01551440727?text=welcome" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #25d047;"></i></a>
+        
+        <a href="https://www.facebook.com/MoSafi7m?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook" style="color: #2b6cee;"></i></a>
+      </div>
+      <div>
+        <div class="container">
+          <h2>أرسل لنا رسالة</h2>
+          <form action="https://formspree.io/f/mdknbgol" method="POST">
+              <div class="form-group">
+                  <label for="name">الاسم:</label>
+                  <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">البريد الإلكتروني:</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="message">الرسالة:</label>
+                  <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              <div class="form-group">
+                  <button type="submit">أرسل</button>
+                  <button class="btnCloseAbout" onclick="closeAbout()">Cancel</button>
+
+              </div>
+          </form>
+      </div>
+      </div>
+    </dialog>
     <div class="basic">
 
     <nav>
