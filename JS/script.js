@@ -57,197 +57,274 @@ let pro = [
   {
     title: "Who can choose modify reason (Operator Request)?",
     answer: "Supervisor",
+    pr : ` <progress ${id="progress"} value="90" max="100"></progress> 90% `
   },
   {
     title:
       "Which of the below is responsible for assigning automatic LAN IP's to the private devices which are connected to the same CPE",
     answer: "DHCP",
+    pr : ` <progress value="90" max="100"></progress> 95% `
+
   },
   {
     title:
       "We will inform our customers about their Upload speed even if they did not ask for it:",
     answer: " FALSE",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title:
       "in Cpe configuration 'VDSL' Parameters XDSL Transfer Mode should be parameter XDSL Transfer Mode",
     answer: "PTM",
+     pr : ` <progress id="progress" value="49" max="100"></progress> 49% `
   },
   {
     title: "Land line delivery available for all Egypt",
     answer: "False",
+     pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
   },
   {
     title: "installation Visit Fees with VAT..?",
     answer: "85.5 LE",
+     pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
   },
   {
     title: "We can make adjust status from which tool: ",
     answer: "Matrix",
+     pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
   },
   {
     title: "Any customer can call us only on 19777& 111 :",
     answer: "FALSE",
+     pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
   },
   {
     title: "Optimizing period for super up to 30 VDSL is : ",
     answer: "4 days",
+     pr : ` <progress id="progress" value="50" max="100"></progress> 50% `
   },
   {
     title: "In Case WO problem Automatic TT will be created...?",
     answer: "True",
+     pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
   },
   {
     title:
       "Which of the following responsible for remove welding from main wire ",
     answer: "Rosetta",
+     pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
   },
   {
     title:
       "In case we make any Request for CST on OSS and this massage appear (service number is migrated to BSS) that mean..",
     answer: "CST migrated to BSS",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title: "We can restart Port from which tool: ",
     answer: "Matrix",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title: "Super up to 30 Mb for package 140 GB price including VAT is: ",
     answer: "182.40",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title:
       "if customer contracted speed is super 30 Mb and his operational speed is 40 Mb and he asks about his actual speed now, CCA will inform him : ",
     answer: "30 Mb",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title:
       "if customer needs to change speed while installation period and call us, No need to make verification with him first: ",
     answer: "FALSE",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title: "In case of daley in activity WO Request CCA action will be...?",
     answer: "create TT and inform CST SLA 1WD",
+    pr : ` <progress id="progress" value="90" max="100"></progress> 90% `
+
   },
   {
     title: "Waiting service is free with WE Ardy 20",
     answer: "FALSE",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title:
       "In CPE configuration , ADSL parameters should be VPI = 35 and VCI = 0 ?",
     answer: "FALSE",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title: "Recharge through Electronic machines is update within 48 H",
     answer: "FALSE",
+    pr : ` <progress id="progress" value="100" max="30"></progress> 30% `
+
   },
   {
     title:
       "In CPE Configuration we must write username in capital letters such as (@TEDATA.NET.EG",
     answer: "FALSE",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title:
       "in instillation follow up cycle follow up team will follow with CST With...SLA, If cast has problem during instillation cycle from his side..",
     answer: "24 H",
+    pr : ` <progress id="progress" value="60" max="100"></progress> 60% `
+
   },
   {
     title: "Modify reason (Customer Request) will be done for free for..",
     answer: "tow times",
+    pr : ` <progress id="progress" value="90" max="100"></progress> 90% `
+
   },
   {
     title: "check availability result must be ....To use it in new contracting",
     answer: "Result Status : Valid | Availability Result : Available",
+    pr : ` <progress id="progress" value="90" max="100"></progress> 90% `
+
   },
   {
     title: "The Main wire come from the box to the CPE direct, this is a : ..",
     answer: "Main Wire Connection",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title:
       "DHCP is assigning automatic LAN IP's to the private devices but NAT is responsible for translating the private IP into Public IP: ",
     answer: "True",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title:
       "Service's Username + password Will be created in which activity ...?",
     answer: "Network Activation",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title:
       "We inform our customers by throttled speed even if he did not ask: ",
     answer: "FALSE",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title:
       "CCA Can Verify CST Data For any Verification Required from BSS only?",
     answer: "True",
+    pr : ` <progress id="progress" value="95" max="100"></progress> 95% `
+
   },
   {
     title: "Check Free port means that...?",
     answer: "No ports available on Matrix",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title: "CST Can Change ....From My WE :",
     answer: "Mobile Number & Mail",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title:
       "in Case CST asked to subscribe on data & voice with us ,We Should not mark on Vouce&Data Flag in check availabilite request",
     answer: "FALSE",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title: "The Telephone cable ends with RJ :...",
     answer: "11",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title:
       "CCA Can change package (order still not completed) From order still...?",
     answer:
       "BSS-->sitemap-->integrated operations(New)-->order management-->order Query",
+      pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title: "If Line has a problem Connection Cable CCA action will be...?",
     answer: "inf cst شبكة ارضية - voice line not copper cannot connect data",
+    pr : ` <progress id="progress" value="95" max="100"></progress> 95% `
+
   },
   {
     title:
       "In case we make any modification on request, we must chose modify reason",
     answer: "Customer Request",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title:
       "Which of the below devices is responsible for assigning WAN IPs to CPEs : ",
     answer: "BRAS",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title:
       "Broad Hop is responsible for checking customer profile from our data base? ",
     answer: "TRUE",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title: "Device is using to split Data and Voice into 2 channels :",
     answer: "Splitter",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title:
       "Which of the below is the responsible for translating any domain name into IP and Vice Versa : ",
     answer: "DNS",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title: "The Ethernet cable ends with RJ :",
     answer: "45",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title:
       "Which of the following makes it harder for hackers to breake the connection and steal the information   :",
     answer: "HTTPS",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title:
       "In Cpe configuration  “VDSL” Parameters XDSL Transfer Mode should be ",
     answer: "PPPOE",
+    pr : ` <progress id="progress" value="100" max="100"></progress> 100% `
+
   },
   {
     title:
@@ -3281,22 +3358,28 @@ lastUp = document.querySelector(".LastUp span")
 lastUp.style.color = "green"
   lastUp.innerHTML = "4-3-2024"
 
+  
 
 function drowItem() {
   let y = pro.map((item) => {
     return `
         <div class="product">
           <div class="product-deatils">
-          <h4><i class="fa-solid fa-circle-info fa-sm"></i> ${item.title}</h4>
+          <h4 id="text"><i class="fa-solid fa-circle-info fa-sm"></i> ${item.title}</h4>
             <p><i class="fa-solid fa-circle-check fa-lg" style="color: #5bc876;"></i> <mark>${item.answer}</mark></p>
+                               ${ item.pr }
+
             <hr>
           </div>
         </div>
         `;
   });
 
+    
   productlist.innerHTML = y.join("");
 }
+
+
 let n = document.getElementById("n");
 for (var num in pro) {
   n.innerHTML = num;
