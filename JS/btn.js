@@ -203,6 +203,12 @@ $('.btn_63').click(function(){
 $('.btn_64').click(function(){
     $('#btn_64').toggle(500)
 })
+$('.btn_65').click(function(){
+    $('#btn_65').toggle(500)
+})
+$('.btn_66').click(function(){
+    $('#btn_66').toggle(500)
+})
 
 
 
