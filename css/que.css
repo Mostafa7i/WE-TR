@@ -9,6 +9,9 @@
   --mode : linear-gradient(to top,  #7d7e7d 0%,#0e0e0e 100%);
   --textmode : #fff;
 }
+progress{
+  accent-color: rgb(2, 215, 2);
+}
 .darkmode{
   color: var(--textmode);
   background: var(--mode);
