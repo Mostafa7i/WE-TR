@@ -344,3 +344,93 @@ header li i , header li a{
 .pdf{
   height: 100vh;
 }
+dialog{
+  margin: auto;
+  text-align: center;
+  width: 350px;
+  border-radius: 5px;
+  border: 0;
+  padding: 10px;
+}
+.iconsAbout{
+  margin-top: 20px;
+  font-size: 25px;
+  /* border: 2px solid red; */
+}
+.iconsAbout a i{
+  margin: 0 7px;
+}
+.btnCloseAbout{
+  background-color: #00C0FF;
+  padding: 7px;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+}
+.Deve::after{
+  content: "";
+  font-weight: 600 ;
+  color: black;
+  animation-name: animaittext;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+}
+@keyframes animaittext {
+  0% {content: "M";}
+  5% {content: "Mo";}
+  10% {content: "Mos";}
+  15% {content: "Most";}
+  20% {content: "Mosta";}
+  25% {content: "Mostaf";}
+  30% {content: "Mostafa";}
+  35% {content: "Mostafa M";}
+  40% {content: "Mostafa Ma";}
+  45% {content: "Mostafa Mah";}
+  50% {content: "Mostafa Mahm";}
+  55% {content: "Mostafa Mahmo";}
+  60% {content: "Mostafa Mahmou";}
+  65% {content: "Mostafa Mahmoud";}
+  70% {content: "Mostafa Mahmoud A";}
+  75% {content: "Mostafa Mahmoud Ab";}
+  80% {content: "Mostafa Mahmoud Abd";}
+  85% {content: "Mostafa Mahmoud Abde";}
+  90% {content: "Mostafa Mahmoud Abdel";}
+  95% {content: "Mostafa Mahmoud Abdelh";}
+  97% {content: "Mostafa Mahmoud Abdelha";}
+  98% {content: "Mostafa Mahmoud Abdelhady";}
+  100% {content: "Mostafa Mahmoud Abdelhady ";}
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+.container form{
+  /* border: 2px solid #ddd; */
+  padding: 10px;
+  background-color: #00bfff25;
+
+}
+.form-group {
+  margin-bottom: 15px;
+
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.form-group button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.form-group button:hover {
+  background-color: #0056b3;
+}
