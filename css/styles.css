@@ -405,12 +405,7 @@ dialog{
   max-width: 600px;
   margin: auto;
 }
-.container form{
-  /* border: 2px solid #ddd; */
-  padding: 10px;
-  background-color: #00bfff25;
 
-}
 .form-group {
   margin-bottom: 15px;
 
