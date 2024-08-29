@@ -13,6 +13,9 @@ if(localStorage.getItem("name")){
 }
 // ////////////////////////////////////////////////////////////////////////////////////////
 
+
+
+
 // var num = 1149 
 
 // var timers  = setInterval(function(){
@@ -97,16 +100,12 @@ function logout(){
   localStorage.clear()
   window.location = "index.html"
 }
-
+let dialogShow = document.getElementById('dialog-show')
 function About(){
-  Swal.fire({
-    title: "المطور",
-    position: "top-center",
-    icon: "info",
-    text : "Mostafa Mahmoud",
-    claseName: "AboutUS",
-    footer : `<div><a hrf=""><i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i></a></div>`
-  });
+  dialogShow.showModal()
+}
+function closeAbout(){
+  dialogShow.close()
 }
 
 
