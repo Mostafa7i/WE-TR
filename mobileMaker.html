@@ -2395,18 +2395,17 @@
                         </div>
 
                       </div>
-                    <button  id="colorbtn5" onclick="sp_1()"  style=" padding: 5px;  border-radius: 5px; display: block; margin-bottom: 4px;"> Step 1 </button>
-                      <div class="hiddenBtn" id="sp_1">
+                    <button onclick="toggleDiv('div1' , this)"> Step 1</button>
+                      <div  class="hiddenV2" id="div1">
                         <p style=" padding: 3px;"> اول حاجة هعملها هبص علي Item logs واشوف حاجه م الـ 3 ابديت دول موجودين ولا لا</p>
                         <p style=" padding: 3px;"> هعمل Ctrl + f  واكتب In progress وبعد كدا هلاقي حاجه م 3 الابديت موجوده</p>
                       </div>
-              
-                    <button  id="colorbtn7" onclick="sp_2()"  style=" padding: 5px;  border-radius: 5px; display: block; margin-bottom: 4px;"> Step 2 </button>
-                      <div class="hiddenBtn" id="sp_2">
+                                  <button onclick="toggleDiv('div2' , this)"> Step 2</button>
+                      <div  class="hiddenV2"  id="div2">
                         <p style=" padding: 3px;"> بعد كدا همشي ترابل شوت عادي مع العميل بحسب المشكلة ال عنده لو كانت الابديت الموجوده Problem solved او Line stable / no problem found <br> اما لو كانت <span style="background-color: red;">Major falut</span> انا كدا هبلغة بالميجرفولت</p>
                       </div>
-                    <button  id="colorbtn8" onclick="sp_3()"  style=" padding: 5px;  border-radius: 5px; display: block; margin-bottom: 4px;"> Step 3 </button>
-                      <div class="hiddenBtn" id="sp_3">
+                    <button onclick="toggleDiv('div3' , this)"> Step 3</button>
+                      <div  class="hiddenV2"  id="div3" >
                         <p> بعد مامشيت الترابل شوت ووصلت للتصعيد مش هينفع نصعد لان فيه شكوي بالفعل موجود في قسم ال CC Follow Up</p>
                         <p style="border: 1px solid red; width: fit-content;">في الحالة دي هنعمل IR</p>
                         <div>
@@ -2428,9 +2427,9 @@
                     </div>
                     <!-- --------------------------------------------------------------------------------------------------------------------------- -->
                     <br>
-                    <button class="btn btn-primary"  onclick="FOsls()"  style=" padding: 5px;  border-radius: 5px; display: block; margin-bottom: 4px; "> ملحوظة </button>
-                    <div class="hiddenBtn" dir="ltr" id="FOsls" >
-                      <div style="outline: 2px solid black; padding: 4px; width: fit-content; border: 2px solid black; outline-offset: 2px; margin: auto;" dir="rtl">
+                    <button class="btn btn-primary"  onclick="toggleDiv('divFo' , this)"> ملحوظة </button>
+                    <div class="hiddenV2" dir="ltr" id="divFo" >
+                      <div style="padding: 4px; width: fit-content; margin: auto;" dir="rtl">
                         <div> في حالة لو هنصعد شكوي تانية والعميل كان عنده شكوي قبل كدا بيكون عندي خيارين في الـ IR 
 
                           <ul style="padding-right: 30px;">
@@ -3173,8 +3172,8 @@
                                     <div dir="rtl" id="notEligible" style="text-align: center;">
                                       <img class="imgftth" src="/images/notEligible.jpg" alt="" >
                                    <div style="padding: 5px 0;">
-                                    <button class="btn-primary" onclick="FtthScript()">Script</button>
-                                    <div  class="hiddenBtn" id="FtthScript">
+                                    <button class="btn-primary" onclick="toggleDiv('FtthScript' , this)">Script</button>
+                                    <div  class="hiddenV2" id="FtthScript">
                                       <p>واضح عندي يافندم ان خط حضرتك مش من ضمن الخطوط ال هيتم تحويلها في الوقت الحالي. هيتم المتابعه مع حضرتك من جانب الشركة بمجرد توفر خدمة الفايبر لحضرتك</p>
                                     </div>
                                    </div>
@@ -3192,8 +3191,8 @@
                                     <div id="Eligible" style="text-align: center;">
                                       <img class="imgftthB" src="/images/Eligible.jpg" alt="" >
                                       <div style="padding: 5px 0;">
-                                       <button class="btn-primary" onclick="FtthScript()">Script</button>
-                                       <div  class="hiddenBtn" id="FtthScript2">
+                                       <button class="btn-primary" onclick="toggleDiv('FtthScript2' , this)">Script</button>
+                                       <div  class="hiddenV2" id="FtthScript2">
                                         <p>خط حضرتك جاهز فنياً للتغير لخدمة الفايبر وهيتم عمل طلب تحويل في اقرب وقت وبعدها هيتم المتابعه مع حضرتك في اجراءات التركيب واستلام جهاز ال ONT</p>
                                        </div>
                                       </div>
@@ -3381,7 +3380,7 @@
         <div style="padding: 5px;">
           <div><img src="images/logo-no-background.png" alt="logo" /></div>
         <div>   
-           <p>&copy; Created By : Mostafa mahmoud  &nbsp;&nbsp;&nbsp;<span onclick="About()" style="text-decoration: underline; color: #00fffb; cursor: pointer;"><i class="fa-solid fa-phone fa-shake"></i>Contact us</span></p>              
+           <p><span onclick="About()" style="text-decoration: underline; color: #00fffb; cursor: pointer;"><i class="fa-solid fa-phone fa-shake"></i>Contact us</span></p>              
         </div>
         </div>
       </div>
