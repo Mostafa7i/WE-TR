@@ -220,65 +220,30 @@ $('.btn_66').click(function(){
 
 // 2
 
-let Callcenter111script = document.getElementById('Callcenter111script')
+function toggleDiv(divId , button) {
+    var div = document.getElementById(divId);
+    if (div.classList.contains('hidden')) {
+        div.classList.remove('hidden');
+        button.classList.add('active2');
+    } else {
+        div.classList.add('hidden');
+        button.classList.remove('active2');
+    }
+}
 
-let isClicked = true;
-   let myButton = function (){
-        if(isClicked){
-            Callcenter111script.style.display = "block"
-            isClicked = false;
-        }else{
-            Callcenter111script.style.display = "none"
-            isClicked = true;
-        }
-      }
 
-    
-  ////////////TTS
-let sp_1s = document.getElementById('sp_1')
-let sp_1 = function (){
-    if(isClicked){
-        sp_1s.style.display = "block"
-        colorbtn5.style.backgroundColor = "blue"
-        isClicked = false;
+
+
+
+function FOsls(divID , button){
+    var div = document.getElementById(divID)
+    if(div.classList.contains('hidden')){
+        div.classList.remove('hidden')
+        button.classList.add('active2')
     }else{
-        sp_1s.style.display = "none"
-        colorbtn5.style.backgroundColor = ""
-        isClicked = true;
-    }
-  }
-let sp_2s = document.getElementById('sp_2')
-let sp_2 = function (){
-    if(isClicked){
-        sp_2s.style.display = "block"
-        colorbtn7.style.backgroundColor = "blue"
-        isClicked = false;
-    }else{
-        sp_2s.style.display = "none"
-        colorbtn7.style.backgroundColor = ""
-        isClicked = true;
-    }
-  }
-let sp_3s = document.getElementById('sp_3')
-let sp_3 = function (){
-    if(isClicked){
-        sp_3s.style.display = "block"
-        colorbtn8.style.backgroundColor = "blue"
-        isClicked = false;
-    }else{
-        sp_3s.style.display = "none"
-        colorbtn8.style.backgroundColor = ""
-        isClicked = true;
-    }
-  }
-let FOslss = document.getElementById('FOsls')
-let FOsls = function (){
-    if(isClicked){
-        FOslss.style.display = "block"
-        isClicked = false;
-    }else{
-        FOslss.style.display = "none"
-        isClicked = true;
+        div.classList.add('hidden')
+        button.classList.remove('active2')
+       
     }
   }
 //   ftth
