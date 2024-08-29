@@ -359,13 +359,27 @@ p{
 .hidden{
 display: none;
 width: fit-content;
-/* border: 2px solid #ddd; */
 padding: 4px 0;
-/* background-color: #f1f0f0;  */
-color: #fff;
-/* text-shadow: 1px 1px 1px black ; */
 border-radius: 5px;
 margin: auto;
+}
+.highlighted{
+  background-color: #6e9cfe59;
+  padding: 5px; 
+  border: 1px solid #ddd; 
+}
+.visible{
+  opacity: 1;
+  max-height: 200px;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+.hiddenV2{
+  opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: opacity 0.5s ease, max-height 0.5s ease;
+
 }
 #msg , #msg3{
 display: none;
@@ -611,7 +625,15 @@ height: 22px;
 
 
 
-
+.active2{
+  background-color: blue;
+  color: white;
+}
+#script-23 button{
+  display: block;
+  padding: 4px;
+  border-radius: 5px;
+}
 
 
 .wrapper .content{
