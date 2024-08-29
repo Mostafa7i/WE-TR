@@ -222,53 +222,16 @@ $('.btn_66').click(function(){
 
 function toggleDiv(divId , button) {
     var div = document.getElementById(divId);
-    if (div.classList.contains('hidden')) {
-        div.classList.remove('hidden');
+    if (div.classList.contains('hiddenV2')) {
+        div.classList.remove('hiddenV2');
         button.classList.add('active2');
+        div.classList.add('visible','highlighted'); // إضافة لون الخلفية عند إظهار الديف
     } else {
-        div.classList.add('hidden');
+        div.classList.add('hiddenV2');
         button.classList.remove('active2');
+        div.classList.remove('visible','highlighted'); 
     }
 }
-
-
-
-
-
-function FOsls(divID , button){
-    var div = document.getElementById(divID)
-    if(div.classList.contains('hidden')){
-        div.classList.remove('hidden')
-        button.classList.add('active2')
-    }else{
-        div.classList.add('hidden')
-        button.classList.remove('active2')
-       
-    }
-  }
-//   ftth
-let FtthScripts = document.getElementById('FtthScript')
-let FtthScripts2 = document.getElementById('FtthScript2')
-let FtthScript = function (){
-    if(isClicked){
-        FtthScripts.style.display = "block"
-        FtthScripts2.style.display = "block"
-        isClicked = false;
-    }else{
-        FtthScripts.style.display = "none"
-        FtthScripts2.style.display = "none"
-        isClicked = true;
-    }
-  }
-//   ftth
-// let resetClears = document.getElementById('resetClear2')
-// let notEligible = document.getElementById('notEligible')
-// let resetClear2 = function (){
-//     if(isClicked){
-//         notEligible.style.display = "none"
-//         isClicked = true;
-//     }
-//   }
 
 
 let radiobtns = document.querySelectorAll("input[name='Chos1']");
