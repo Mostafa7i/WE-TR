@@ -318,6 +318,7 @@ header{
     rgb(34, 13, 84),
     rgb(53, 5, 81)
   );
+  color: #fff;
    border-radius: 5px;
 }
 
@@ -379,6 +380,7 @@ margin: auto;
             max-height: 0;
             overflow: hidden;
             transition: opacity 0.5s ease, max-height 0.5s ease;
+
 
 }
 #msg , #msg3{
@@ -525,6 +527,12 @@ width: fit-content;
 padding: 4px;
 /* background-color: #e5cefa; */
 }
+.script{
+  border-radius: 5px;
+background-color: #5a63568c;
+width: fit-content;
+padding: 4px;
+}
 
 
 .radio_tabs{
@@ -626,8 +634,11 @@ height: 22px;
 
 
 .active2{
-  background-color: blue;
+  background-color: #0066ff;
   color: white;
+  box-shadow: 0px 0px 2px 5px  #023f9aad;
+  border: 0;
+  margin: 5px 0;
 }
 #script-23 button{
   display: block;
