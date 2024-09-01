@@ -1017,13 +1017,13 @@
 
             <div  class="styleBox"  style="width: fit-content; padding: 3px 10px; border-radius: 5px;">
               
-              <div><label  class="texx"><input type="checkbox" id="check1" onchange="showandhid()" data-click="clickk"> Concession </label> &nbsp; &nbsp;  <span onclick="updeted1()" class="updated">Updated</span></div>
+              <div><label  class="texx"><input type="checkbox" onchange="checkBox('hidcheck1')" data-click="clickk"> Concession </label> &nbsp; &nbsp;  <span onclick="updeted1()" class="updated">Updated</span></div>
                   
-              <div class="hidden" id="hid">
+              <div class="hidden" id="hidcheck1">
                 <p>العميل عايز تعويض عن <span id="textC">...</span>؟</p>
               <div>
-                <label id="tik" class="box" style="color: red;"><input type="checkbox" id="q-14"><span class="color2"> شكوي </span></label>
-                <div id="script-14" class="scripts">
+                <label id="tik" class="box" style="color: red;"><input type="checkbox" id="ticket" onchange="checkBox('check_Esclat')"><span class="color2"> شكوي </span></label>
+                <div id="check_Esclat" class="hidden script">
                   <div class="allinput" style="max-width: 400px;">
                     <form>
                       <label><input type="radio" name="Chos1" value="انقطاع حراره (لايمكن التعويض فحالة عدم وجود مشكلة بالداتا)"> <span class="radio_mark">Voice Down</span></label>
@@ -1061,9 +1061,9 @@
                         </label>
 
                         <br>
-                        <label class="box"><input type="checkbox" id="q-39"> <span class="color2" style="font-size: 14px;">في حالة الشكوي اتعملها اعادة تصعيد اكتر من مره؟</span></label>
+                        <label class="box"><input type="checkbox" onchange="checkBox('check_ReEsclat')"> <span class="color2" style="font-size: 14px;">في حالة الشكوي اتعملها اعادة تصعيد اكتر من مره؟</span></label>
                         <br>
-                    <div id="script-39" class="scripts">
+                    <div id="check_ReEsclat" class="hidden script">
                       <li>في حالة مرور اكثر من يومين بين Close code واعادة التصعيد سيتم مراجعة الاستهلاك</li>
                       <li>يحب ان لايزيد عن 1 جيجا في اليوم</li>
                       <li>تسخدم في حالة Down cases</li>
@@ -1107,9 +1107,9 @@
                                               
   
                                                   <ul class="cond2" dir="rtl" style="list-style: none;">
-                                                    <label><li id="green6"><input type="checkbox" id="checkgreen6" onclick="action1()"> <span>الخط Active</span> </li></label>
-                                                    <label><li id="green9"><input type="checkbox" id="checkgreen9" onclick="action1()"> <span>العميل متعوضش قبل كدا</span></li></label>
-                                                    <label><li id="green7"><input type="checkbox" id="checkgreen7" onclick="action1()"> <span>الشكوي كانت في Third Level </span> <button class="btn-primary btn_33">3rd Level</button></li></label>
+                                                    <label><li id="green6"><input type="checkbox" id="checkgreen6" onclick="action()"> <span>الخط Active</span> </li></label>
+                                                    <label><li id="green9"><input type="checkbox" id="checkgreen9" onclick="action()"> <span>العميل متعوضش قبل كدا</span></li></label>
+                                                    <label><li id="green7"><input type="checkbox" id="checkgreen7" onclick="action()"> <span>الشكوي كانت في Third Level </span> <button class="btn-primary btn_33">3rd Level</button></li></label>
                                                     
                                                     <div id="btn_33" class="hiddenBtn">
                                                           <div style="padding: 3px; background-color: black; color: #fff; text-align: left;" >
@@ -1121,7 +1121,7 @@
                                                               <li>Maintenance vist</li>
                                                           </div>
                                                     </div>
-                                                    <label><li id="green8"> <input type="checkbox" id="checkgreen8" onclick="action1()"> <span>ينفع يتعوض علي الـ Close Code</span> <button class="btn-primary btn_34" style="border-radius: 7px; padding: 0 3px;" > تحقق</button></li></label>
+                                                    <label><li id="green8"> <input type="checkbox" id="checkgreen8" onclick="action()"> <span>ينفع يتعوض علي الـ Close Code</span> <button class="btn-primary btn_34" style="border-radius: 7px; padding: 0 3px;" > تحقق</button></li></label>
                                                     <div class="hiddenBtn" id="btn_34" style ="background-color: #ddd;">
                                                       <div style="padding: 3px; background-color: #c1bebe; text-align: center;"> 
                                                         <span> بفتح Item Logs واشوف الـ Close code</span><br>
@@ -1134,9 +1134,9 @@
                                                       <hr>
 
                                                           <div>
-                                                            <label class="box"><input type="checkbox" id="q-8"><span class="color2" dir="rtl"> Update ينفع يتعوض عليها </span></label>
+                                                            <label class="box"><input type="checkbox" onchange="checkBox('check_UpdateAccept')"><span class="color2" dir="rtl"> Update ينفع يتعوض عليها </span></label>
                                                               <br>
-                                                          <div id="script-8" class="scripts">
+                                                          <div id="check_UpdateAccept" class="hidden script">
                                               
                                                               
                                                             <table class="table table-bordered table-primary" dir="auto" style="font-size: 10px; text-align: center;">
@@ -1248,9 +1248,9 @@
                                                           </div>
                                                          <!-- ------------------------------------------------------------------------------------------------------------------------------------------ -->
                                                          <div>
-                                                          <label class="box"><input type="checkbox" id="q-0"><span class="color2 q_0" dir="rtl"> Update مينفعش يتعوض عليها لو withn sla</label>
+                                                          <label class="box"><input type="checkbox" onchange="checkBox('check_UpdateRefuse')"><span class="color2" dir="rtl"> Update مينفعش يتعوض عليها لو withn sla</label>
                                                             <br>
-                                                        <div id="script-0" class="scripts">
+                                                        <div  id="check_UpdateRefuse" class="hidden script">
                                                             
                                                           <table class="table table-bordered table-primary" dir="auto" style="font-size: 10px; text-align: center;">
                                                             <thead>
@@ -1341,24 +1341,13 @@
                                                  
                                                      
                                                     </div>
-                                                    <label><li id="green10"><input type="checkbox" id="checkgreen10" onclick="action1()"> <span>مفيش تفتيش هندسي</span> <button class="btn-primary btn_35" > شرح</button></li></label>
+                                                    <label><li id="green10"><input type="checkbox" id="checkgreen10" onclick="action()"> <span>مفيش تفتيش هندسي</span> <button class="btn-primary btn_35" > شرح</button></li></label>
                                                     <div class="hiddenBtn" id="btn_35" style ="background-color: black; color: #fff;">
                                                       <p style=" width: fit-content; padding: 5px;"> 
                                                         <mark style="display: block;">دي بعرفها من الـ Item Logs بعمل Ctrl + f  واكتب eng (لازم ميكونش فيه تفتيش هندسي)</mark>
   
                                                     </div>
-                                                      <!-- <label><li id="green11">يمكن تعويض العميل مرتين فقط في الشهر شرط ان لاتكون نفس الشكوي <input type="checkbox"  id="checkgreen11" onclick="action1()"></li></label> 
-                                
-                                                      <label><li id="green20"> يتم اضافة الهديه في حالة الـ Port Time Out حتي لو مكنش فيه Outage علي CST360<input type="checkbox"  id="checkgreen20" onclick="action1()"></li></label>
-                                                      <label><li id="green21"> يتم اضافة we mobile  في حالة تصعيد شكوي High Attenuation/BLQ/Instability <input type="checkbox"  id="checkgreen21" onclick="action1()"></li></label>
-                                                      <label><li id="green22">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  Technical Dispatch<input type="checkbox"  id="checkgreen22" onclick="action1()"></li></label>
-                                                      <label><li id="green23">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  Out of Service<input type="checkbox"  id="checkgreen23" onclick="action1()"></li></label>
-                                                      <label><li id="green24">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  No physical layer however - Fault exist<input type="checkbox"  id="checkgreen24" onclick="action1()"></li></label>
-                                                      <label><li id="green25">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  In BLQ cases<input type="checkbox"  id="checkgreen25" onclick="action1()"></li></label>
-                                                      <label><li id="green26">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  Run real time profile optomozation<input type="checkbox"  id="checkgreen26" onclick="action1()"></li></label>
-                                                      <label><li id="green27">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  No enough data for evaluating stability<input type="checkbox"  id="checkgreen27" onclick="action1()"></li></label>
-                                                      <label><li id="green28">اثناء الـ  Troubleshooting نتيجة الـ ASSIA كانت  Technical Dispatch is recommended<input type="checkbox"  id="checkgreen28" onclick="action1()"></li></label> 
-                                  -->
+                                                    
                                 </ol>  
                                                      <div class="scripts" id="showStep2" dir="rtl" style="background: greenyellow;">
                                                       <strong style="display: block; border: 2px dotted black; text-align: center;">System Action</strong>
@@ -1371,9 +1360,9 @@
   
                                                         <div class="con4 scripts" dir="rtl">
                                                           <p style="color: green;"> هنعوض العميل خلال المكالمة (On Spot)</p>
-                                                          <label class="box"><input type="checkbox" id="q-00"><strong class="color2" dir="rtl"> عرض كيفية التعويض</strong></label>
+                                                          <label class="box"><input type="checkbox" onchange="checkBox('check_ShowConsstion')"><strong class="color2" dir="rtl"> عرض كيفية التعويض</strong></label>
                                                           <br>
-                                                          <div id="script-00" class="scripts">
+                                                          <div id="check_ShowConsstion" class="hidden script">
                                                             <ol dir="ltr" >
                                                               <strong>BSS</strong>
                                                               <li>Sitemap</li>
@@ -1404,8 +1393,8 @@
                                                           </div>
                                                          </div>
                                                         <div class="con5 scripts" dir="rtl">
-                                                          <label class="box"><input type="checkbox" id="q-17"><span class="color2" dir="rtl">هنعمل IR للتيم ليدر</span></label>
-                                                          <div id="script-17" class="scripts">
+                                                          <label class="box"><input type="checkbox"  onchange="checkBox('check_IRforTL')"><span class="color2" dir="rtl">هنعمل IR للتيم ليدر</span></label>
+                                                          <div id="check_IRforTL" class="hidden script">
                                                             <div  dir="rtl">
                                                               <li>من الويكي On spot بنجيب الـ IR</li>
                                                               <li>Agant Concession</li>
@@ -1442,9 +1431,9 @@
               </div>
                 <!--  -->
               <div style="padding: 10px 0;">
-                <label class="box" id="ou"><input type="checkbox" id="q-19" ><span style="color: red;" dir="rtl"> Outage</span></label>
+                <label class="box" id="ou"><input type="checkbox" id="outage" onchange="checkBox('check_outage')"><span style="color: red;" dir="rtl"> Outage</span></label>
                 <br>
-                <div id="script-19" class="scripts">
+                <div id="check_outage" class="hidden script">
                   <p style="outline: 1px solid red; padding: 3px;"> في الـ Outage يتم تعويض العميل بشكل تلقائي خلال 48 ساعه </p>
                   <strong> مدة الاوتيج : </strong>
                
@@ -1546,7 +1535,7 @@
                     <div class="radio_tabs">
                       <label class="radio_wrap" data-radio="radio_1">
                         <input type="radio" name="sports" class="input" hidden>
-                        <div class="radio_mark">
+                        <div class="radio_mark" >
                           Normal Cycle
                         </div>
                       </label>
@@ -1673,8 +1662,8 @@
                           <p style="text-align: left;">Step-2 : ..</p>
                       </div>
                       <hr>
-                        <label class="box" style="color: red;"><input type="checkbox" id="q-38"><span class="color2"> الحالات التي لا يتم فيها طلب التعويض</span></label>
-                    <div id="script-38" class="scripts">
+                        <label class="box" style="color: red;"><input type="checkbox" onchange="checkBox('check_noConssiton')"><span class="color2"> الحالات التي لا يتم فيها طلب التعويض</span></label>
+                    <div id="check_noConssiton" class="hidden script">
                       <ul dir="rtl">
                         <li> في حالة فتح Ticket اخري في نفس اليوم لنفس الحالة</li>
                         <li> في حالة كانت المشكلة voice down only او Wireless issue او info request</li>
@@ -1682,8 +1671,8 @@
                       </ul>
                       </div>
                     <br>
-                    <label><input type="checkbox" id="q-15" name="fruit" > <span class="color2"> في حالة كان هناك Outage علي 360 </span></label>
-                    <div id="script-15" class="scripts">
+                    <label><input type="checkbox" onchange="checkBox('check_OutageON360')" name="fruit" > <span class="color2"> في حالة كان هناك Outage علي 360 </span></label>
+                    <div id="check_OutageON360" class="hidden script">
                       <ul dir="rtl">
                         <li> بنسأل العميل عن الفترة ال كان فيها المشكلة ونراجع الـ Tool فيها Outage ID ولا لا</li>
                         <li> بعد كدا بيطلع كل الـ Outage الخاصة بالعميل وهناخد الـ Outage ID نكتبها في الـ TT</li>
@@ -1691,8 +1680,8 @@
                       </ul>
                     </div>
                     <br>
-                    <label><input type="checkbox" id="q-16" name="fruit" > <span class="color2">في حالة مفيش Outage علي 360</span></label>
-                    <div id="script-16" class="scripts">
+                    <label><input type="checkbox" onchange="checkBox('check_NoOutageON360')" name="fruit" > <span class="color2">في حالة مفيش Outage علي 360</span></label>
+                    <div id="check_NoOutageON360" class="hidden script">
                       <ul>
                         <li> هنراجع الـ BSS عشان نشوف الـ SRs الخاصة بالـ Outage  من الفترة المطلوبة وهناخد الـ Outage ID من ال SR نكتبها في الـ Concession TT</li>
                       </ul>
@@ -1710,8 +1699,8 @@
                         
                         </div>
                         <div style="padding: 10px 0;">
-                          <label class="box" style="display: block;"><input type="checkbox" id="q-22"><span class="color2" dir="rtl"> <strong>شروط التعويض خلال المكالمة</strong> </span></label>
-                          <div id="script-22" class="scripts">
+                          <label class="box" style="display: block;"><input type="checkbox" onchange="checkBox('check_CondtionOnSpot')"><span class="color2" dir="rtl"> <strong>شروط التعويض خلال المكالمة</strong> </span></label>
+                          <div id="check_CondtionOnSpot" class="hidden script">
                             <div style="padding-right: 20px;">
                               <ol class="cond3">
                                   <strong>الشروط : </strong>
@@ -1950,9 +1939,9 @@
                       <div class="lines"></div>
 <!-- //////////////////////////////////////////////////////////////////////////////////////           We Mobile Concession          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
                     <div  class="styleBox">
-                      <div><label class="texx"><input type="checkbox" id="check5" onchange="showandhid()" data-click="clickk"> We Mobile Concession</label><!-- &nbsp; &nbsp; <span id="upd" onclick="updeted2()" class="updated">Updated </span> --></div>
+                      <div><label class="texx"><input type="checkbox"  onchange="checkBox('hidcheck2')" data-click="clickk"> We Mobile Concession</label><!-- &nbsp; &nbsp; <span id="upd" onclick="updeted2()" class="updated">Updated </span> --></div>
                   
-                      <div class="hidden" id="hid5" dir="rtl">
+                      <div class="hidden" id="hidcheck2" dir="rtl">
                        <div> <strong>هدية تعويض علي رقم 015</strong></div>
                        <mark style="background-color: red; color: white; display: block; text-align: center; margin-bottom: 10px;"><strong>!</strong> منقدرش نقدم طلب تعويض لو كانت مشكلة العميل حراره بس </mark> 
     
@@ -2161,9 +2150,9 @@
                             </div>  <!-- /content -->
                           </div> <!-- /wrapper -->
                       <!-- -------------------------------------------------------------------------- -->
-                      <label class="box"><input type="checkbox" id="q-18"><span class="color2" dir="rtl"> كيفية التعويض من خلالنا؟</span></label>
+                      <label class="box"><input type="checkbox"  onchange="checkBox('check_onSpot')"><span class="color2" dir="rtl"> كيفية التعويض من خلالنا؟</span></label>
                       <br>
-                      <div id="script-18" class="scripts">
+                      <div id="check_onSpot" class="hidden script">
                        <div class="sper1">
                         <ol class="sper-ol">
                           <li>BSS</li>
@@ -2241,11 +2230,11 @@
                   <div class="lines"></div>
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////           TTS          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
                   <div class="styleBox">
-                    <label class="texx"><input type="checkbox" id="check2" onchange="showandhid()" data-click="clickk"> TTS Case</label>&nbsp; &nbsp; <span id="upd"  class="updated">Updated </span>
-                    <div class="hidden" id="hid2" dir="rtl">
-                      <label class="box"><input type="checkbox" id="q-1"><span class="color2" dir="rtl"> في حالة النت مش شغال والعميل عنده شكوي <span style="color: red;">Physcal</span> مفتوحه في IU</span></label>
+                    <label class="texx"><input type="checkbox"  onchange="checkBox('hidcheck3')" data-click="clickk"> TTS Case</label>&nbsp; &nbsp; <span id="upd"  class="updated">Updated </span>
+                    <div class="hidden" id="hidcheck3" dir="rtl">
+                      <label class="box"><input type="checkbox" onchange="checkBox('check_noInternet')"><span class="color2" dir="rtl"> في حالة النت مش شغال والعميل عنده شكوي <span style="color: red;">Physcal</span> مفتوحه في IU</span></label>
                       <br>
-                      <div id="script-1" class="scripts">
+                      <div id="check_noInternet" class="hidden script">
                         <ul dir="rtl">
                           <li>اول حاجه هنشوف الشكوي علي TTS وهنشوفها متصعده من امتي حاليا After SLA ولا Within SLA ونعمل Update عليها كمثال:</li>
                           <p  style="color: red; text-align: left;">CST Name .... Follow Up within / After SLA, Informed CST Normal SLA 24 H</p>
@@ -2258,9 +2247,9 @@
                       </div>
                       <!-- ------------------------------------------------------------------------------------------- -->
                       <br>
-                      <label class="box"><input type="checkbox" id="q-2"><span class="color2" dir="rtl"> في حالة عنده شكوي <span style="color: red;">Physcal</span> مفتوحة في IU وجاي بشكوي ثانية <span style="color: red;">Physcal</span> برده</span></label>
+                      <label class="box"><input type="checkbox" onchange="checkBox('check_EsclatOnTTS')"><span class="color2" dir="rtl"> في حالة عنده شكوي <span style="color: red;">Physcal</span> مفتوحة في IU وجاي بشكوي ثانية <span style="color: red;">Physcal</span> برده</span></label>
                       <br>
-                      <div id="script-2" class="scripts">
+                      <div id="check_EsclatOnTTS" class="hidden script">
                         <ul dir="rtl">
                           <li> هنفتح الشكوي وكل الهنعمله نشوف الشكوي متصعده من امتي وهي حاليا within sla ولا After sla ونعمل ابديت عليها وبس كدا</li>
                           <p  style="color: red; text-align: left;">CST Name .... Follow Up within / After SLA, CST has <bdi>(اسم الشكوي الجديده)</bdi> now Informed CST 24 H</p>
@@ -2271,9 +2260,9 @@
                       </div>
                       <!-- ---------------------------------------------------------------------------------------------- -->
                       <br>
-                      <label class="box"><input type="checkbox" id="q-3"><span class="color2" dir="rtl"> في حالة عنده شكوي <span style="color: red;">Physcal</span> مفتوحة في IU وجاي بشكوي ثانية Logicl</span></label>
+                      <label class="box"><input type="checkbox" onchange="checkBox('check_EsclatOnTTS3')"><span class="color2" dir="rtl"> في حالة عنده شكوي <span style="color: red;">Physcal</span> مفتوحة في IU وجاي بشكوي ثانية Logicl</span></label>
                       <br>
-                      <div id="script-3" class="scripts">
+                      <div id="check_EsclatOnTTS3" class="hidden script">
                         <ul dir="rtl">
                           <li> هنمشي ترابل شوت عادي جداً من الاول مع العميل ونشوف لو المشكلة اتحلت خلاص نعمل SR انها اتحلت وفي حالة انها متحلتش وهتتصعد هنعمل TTS case من الـ IR</li>
                           <p  style="color: red; text-align: left;"> IR -> TTS case -> First ViewIR -> TTS case -> First View</p>
@@ -2289,9 +2278,9 @@
                       </div>
                     <!-- ---------------------------------------------------------------------------------------------------------------- -->
                     <br>
-                    <label class="box"><input type="checkbox" id="q-4"><span class="color2" dir="rtl"> في حالة عنده شكوي <span style="color: red;">Physcal</span> مفتوحه في قسم الـ CC Follow up وبيقول النت مش شغال</span></label>
+                    <label class="box"><input type="checkbox" onchange="checkBox('check_EsclatOnTTS4')"><span class="color2" dir="rtl"> في حالة عنده شكوي <span style="color: red;">Physcal</span> مفتوحه في قسم الـ CC Follow up وبيقول النت مش شغال</span></label>
                     <br>
-                    <div id="script-4" class="scripts">
+                    <div id="check_EsclatOnTTS4" class="hidden script">
                       <p class="script1"><strong> لازم نشوف الـ TTS</strong></p> 
                       <ul dir="rtl">
                         <li> هنمشي ترابل شوت تاني من الاول مع العميلل سواء كانت نفس المشكلة او مشكلة ثانية Physcal وهتتصعد نعمل TTS Case من IR</li>
@@ -2308,9 +2297,9 @@
                     </div>
                     <!-- --------------------------------------------------------------------------------------------------------------------------- -->
                     <br>
-                    <label class="box"><input type="checkbox" id="q-5"><span class="color2" dir="rtl"> في حالة كان عنده شكوي <span style="color: red;">Physcal</span> مفتوحه في CC Follow up وجاي بشكوي Logical</span></label>
+                    <label class="box"><input type="checkbox" onchange="checkBox('check_EsclatOnTTS5')"><span class="color2" dir="rtl"> في حالة كان عنده شكوي <span style="color: red;">Physcal</span> مفتوحه في CC Follow up وجاي بشكوي Logical</span></label>
                     <br>
-                    <div id="script-5" class="scripts">
+                    <div id="check_EsclatOnTTS5" class="hidden script">
                       <ul dir="rtl">
                         <li> هنمشي ترابل شوت عادي جداً من الاول مع العميل ونشوف لو المشكلةاتحلت خلاص نعمل SR انها اتحلت وفي حاله لو متحلتش وهتتصعد هنعمل TTS Case من IR</li>
                         <p  style="color: red; text-align: left;"> IR -> TTS case -> First View</p>
@@ -2326,9 +2315,9 @@
                     </div>
                     <!-- ------------------------------------------------------------------------------------------------------------------------------- -->
                     <br>
-                    <label class="box"><input type="checkbox" id="q-6"><span class="color2" dir="rtl"> في حالة رفعنا شكوي لقسم الـ IU ونزلت تاني MCU</span></label>
+                    <label class="box"><input type="checkbox" onchange="checkBox('check_EsclatOnTTS6')"><span class="color2" dir="rtl"> في حالة رفعنا شكوي لقسم الـ IU ونزلت تاني MCU</span></label>
                     <br>
-                    <div id="script-6" class="scripts">
+                    <div id="check_EsclatOnTTS6" class="hidden script">
                       <p class="script1"><strong> نزل عليها Update Major Fault / Close Code 20</strong></p> 
                       <ul dir="rtl">
                         <li><mark> هنعطي للعميل 3 ايام عمل ونعمل SR</mark></li>
@@ -2345,9 +2334,9 @@
                     </div>
                     <!-- --------------------------------------------------------------------------------------------------------------------------- -->
                     <br>
-                    <label class="box"><input type="checkbox" id="q-7"><span class="color2" dir="rtl"> في حالة الشكوي في <span style="color: #00fffb;">MCU Call Center</span> </span></label>
+                    <label class="box"><input type="checkbox" onchange="checkBox('check_EsclatOnTTS7')"><span class="color2" dir="rtl"> في حالة الشكوي في <span style="color: #00fffb;">MCU Call Center</span> </span></label>
                     <br>
-                    <div id="script-7" class="scripts">
+                    <div id="check_EsclatOnTTS7" class="hidden script">
 
                       <div class="AllMCU">
                        <form>
@@ -2378,10 +2367,10 @@
                     <!-- --------------------------------------------------------------------------------------------------------------------------- -->
          
                     <br>
-                    <label class="box"><input type="checkbox" id="q-23"><span class="color2" dir="rtl"> في حالة الشكوي في قسم الـ CC Follow Up</span></label>
+                    <label class="box"><input type="checkbox" onchange="checkBox('check_EsclatOnTTS8')"><span class="color2" dir="rtl"> في حالة الشكوي في قسم الـ CC Follow Up</span></label>
                   
                     <br>
-                    <div id="script-23" class="scripts" >
+                    <div id="check_EsclatOnTTS8" class="hidden script" >
                    
                      <div style="padding: 10px;">
                       <div>
@@ -2446,13 +2435,13 @@
                           <div class="lines"></div>
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////        Follow UP          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
                    <div class="styleBox">
-          <div><label class="texx"><input type="checkbox" id="check3" onchange="showandhid()" data-click="clickk"> حالات الـ Follow up</label> <!-- &nbsp; &nbsp; <span onclick="updeted3()" class="updated">Updated</span> --></div>
-                          <div class="hidden" id="hid3" >
+          <div><label class="texx"><input type="checkbox" onchange="checkBox('hidcheck4')" data-click="clickk"> حالات الـ Follow up</label> <!-- &nbsp; &nbsp; <span onclick="updeted3()" class="updated">Updated</span> --></div>
+                          <div class="hidden" id="hidcheck4" >
                                 <div style="padding: 10px;">
                                   <button class="btn btn-primary"  onclick="hideUnhide('Follow')"  style=" padding: 5px;  border-radius: 5px; display: block; margin-bottom: 4px; "> حالات يتم فيها عرض المتابعه مع العميل </button>
                                   <div class="hiddenBtn" dir="ltr" id="Follow" dir="rtl">
-                                    <li> <label class="box"> <input type="checkbox" id="q-9"><span class="color2" dir="rtl"> Customer not beside CPE &nbsp;</span></label> </li>
-                                    <div id="script-9" class="scripts">
+                                    <li> <label class="box"> <input type="checkbox" id="q-9" onchange="checkBox('check_FollowUP1')"><span class="color2" dir="rtl"> Customer not beside CPE &nbsp;</span></label> </li>
+                                    <div id="check_FollowUP1" class="hidden script">
                                       <div style="border: 2px solid black; padding: 5px;" dir="rtl">
                                         <p><strong>ملاحظات</strong></p>
                                         <li>محاولة الاتصال بالعميل بتبقي مرتين فقط</li>
@@ -2474,8 +2463,8 @@
                                       </div>
                                     </div>
       
-                                    <li> <label class="box"> <input type="checkbox" id="q-26"><span class="color2" dir="rtl"> Can't Continue Troubleshoot &nbsp;</span></label> </li>
-                                    <div id="script-26" class="scripts">
+                                    <li> <label class="box"> <input type="checkbox" onchange="checkBox('check_FollowUP2')"><span class="color2" dir="rtl"> Can't Continue Troubleshoot &nbsp;</span></label> </li>
+                                    <div id="check_FollowUP2" class="hidden script">
                                         <div dir="rtl">
                                           <p style="border: 1px solid red; width: fit-content;"> العميل مش عارف يكمل خطوات التيكت ميكر خلال المكالمة </p>
                                           <div>
@@ -2495,50 +2484,50 @@
                                           </div>
                                         </div>
                                     </div>
-                                    <li> <label class="box"> <input type="checkbox" id="q-27"><span class="color2" dir="rtl"> Follow up Delayed / Rework Cases &nbsp;</span></label></li>
-                                    <div id="script-27" class="scripts">
+                                    <li> <label class="box"> <input type="checkbox" onchange="checkBox('check_FollowUP3')"><span class="color2" dir="rtl"> Follow up Delayed / Rework Cases &nbsp;</span></label></li>
+                                    <div id="check_FollowUP3" class="hidden script">
                                       <div dir="rtl">
                                         <p style="border: 1px solid red; width: fit-content;"> في حالة اني بعمل للعميل delayed او rewark والعميل مش تابع لمشروع حياه كريمة بعرض علي العميل ارجع ليه بعد ساعه</p>
                                       </div>
                                     </div>
-                                    <li> <label class="box"> <input type="checkbox" id="q-28"><span class="color2" dir="rtl"> Customer Request &nbsp;</span></label></li>
-                                    <div id="script-28" class="scripts">
+                                    <li> <label class="box"> <input type="checkbox" onchange="checkBox('check_FollowUP4')"><span class="color2" dir="rtl"> Customer Request &nbsp;</span></label></li>
+                                    <div  id="check_FollowUP4" class="hidden script">
                                       <div dir="rtl">
                                         <p style="border: 1px solid red; width: fit-content;"> طلب من العميل ارجع ليه مره تانيه في وقت تاني خلال وقت الشيفت</p>
                                       </div>
                                     </div>
-                                    <li> <label class="box"> <input type="checkbox" id="q-29" disabled><span class="color2" dir="rtl"> FV and FBB Payment &nbsp;</span></label></li>
-                                    <div id="script-29" class="scripts">
+                                    <li> <label class="box"> <input type="checkbox" onchange="checkBox('check_FollowUP5')" disabled><span class="color2" dir="rtl"> FV and FBB Payment &nbsp;</span></label></li>
+                                    <div id="check_FollowUP5" class="hidden script">
                                       <div dir="rtl">
                                         <p style="border: 1px solid red; width: fit-content;"> </p>
                                       </div>
                                     </div>
-                                    <li> <label class="box"> <input type="checkbox" id="q-30"><span class="color2" dir="rtl"> Direct the customer to CSO &nbsp;</span></label></li>
-                                    <div id="script-30" class="scripts">
+                                    <li> <label class="box"> <input type="checkbox" onchange="checkBox('check_FollowUP6')"><span class="color2" dir="rtl"> Direct the customer to CSO &nbsp;</span></label></li>
+                                    <div id="check_FollowUP6" class="hidden script">
                                       <div dir="rtl">
                                         <p style="border: 1px solid red; width: fit-content;"> لو حولت العميل للفرع بعرض علي العميل ارجع ليه مره تانيه لو هيروح الفرع بعد المكالمة في خلال اي وقت في الشفت</p>
                                       </div>
                                     </div>
-                                    <li> <label class="box"> <input type="checkbox" id="q-31"><span class="color2" dir="rtl"> Can't test the service &nbsp;</span></label></li>
-                                    <div id="script-31" class="scripts">
+                                    <li> <label class="box"> <input type="checkbox" onchange="checkBox('check_FollowUP7')"><span class="color2" dir="rtl"> Can't test the service &nbsp;</span></label></li>
+                                    <div id="check_FollowUP7" class="hidden script">
                                       <div dir="rtl">
                                         <p style="border: 1px solid red; width: fit-content;"> لو العميل مش عارف يجرب الخدمه في خلال المكالمة</p>
                                       </div>
                                     </div>
-                                    <li><label class="box"> <input type="checkbox" id="q-32"><span class="color2" dir="rtl"> Not Verified Customer  &nbsp;</span></label></li>
-                                    <div id="script-32" class="scripts">
+                                    <li><label class="box"> <input type="checkbox" onchange="checkBox('check_FollowUP8')"><span class="color2" dir="rtl"> Not Verified Customer  &nbsp;</span></label></li>
+                                    <div id="check_FollowUP8" class="hidden script">
                                       <div dir="rtl">
                                         <p style="border: 1px solid red; width: fit-content;"> لو فيه عند العميل مشكلة في الـ Verification</p>
                                       </div>
                                     </div>
-                                    <li> <label class="box"> <input type="checkbox" id="q-33"><span class="color2" dir="rtl"> In progress Automation &nbsp;</span></label></li>
-                                    <div id="script-33" class="scripts">
+                                    <li> <label class="box"> <input type="checkbox" onchange="checkBox('check_FollowUP9')"><span class="color2" dir="rtl"> In progress Automation &nbsp;</span></label></li>
+                                    <div id="check_FollowUP9" class="hidden script">
                                       <div dir="rtl">
                                         <p style="border: 1px solid red; width: fit-content;"> لو العميل صعد شكوي من علي الخدمه الصوتيه بعرض علي العميل اني هرجع ليه بعد ساعه</p>
                                       </div>
                                     </div>
-                                    <li> <label class="box"> <input type="checkbox" id="q-34"><span class="color2" dir="rtl"> Billing Adjustment &nbsp;</span></label></li>
-                                    <div id="script-34" class="scripts">
+                                    <li> <label class="box"> <input type="checkbox" onchange="checkBox('check_FollowUP10')"><span class="color2" dir="rtl"> Billing Adjustment &nbsp;</span></label></li>
+                                    <div id="check_FollowUP10" class="hidden script">
                                       <div dir="rtl">
                                         <p style="border: 1px solid red; width: fit-content;"> لو العميل عنده مشكلة في الدفع بعرض عليه انو يشحن من My we او الموقع الرسمي ولو مش عارف بعرض عليه اني هرجع ليه بعد مايشحن واكمل معاه طلبه سواء تجديد باقة او تصعيد شكوي</p>
                                       </div>
@@ -2551,9 +2540,9 @@
                           <hr>
                           <strong>Customer Has To pay</strong>
                           <br>
-                          <label class="box"><input type="checkbox" id="q-10"><span class="color2" dir="rtl"> في حالة ان الخدمة فاصلة عند العميل سواء Voice Or Data بسبب عدم تجديد باقة الارضي اوالانترنت</span></label>
+                          <label class="box"><input type="checkbox" onchange="checkBox('check_FollowUP11')"><span class="color2" dir="rtl"> في حالة ان الخدمة فاصلة عند العميل سواء Voice Or Data بسبب عدم تجديد باقة الارضي اوالانترنت</span></label>
                           <br>
-                          <div id="script-10" class="scripts">
+                          <div  id="check_FollowUP11" class="hidden script">
                             <ul dir="rtl">
                               <p style="align-items: center; padding: 5px; width: fit-content;" > هنعرض علي العميل ميعاد تاني يكون مناسب ليه ويكون سدد فيه للتأكد من اذا كانت الخدمة شغالة بشكل جيد بعد السداد.</p>  
                             </ul>
@@ -2562,9 +2551,9 @@
                              <hr>
                              <strong>Payment is not reflected on BSS system (Online)</strong>
                              <br>
-                             <label class="box"><input type="checkbox" id="q-11"><span class="color2" dir="rtl"> في حالة ان العميل شحن عن طريق WE-App او E-Care وكان الدفع لسه مظهرش علي BSS وبلغنا العميل انه ينتظر ساعه من ميعادالدفع سواء للـ FV account او FBB account</span></label>
+                             <label class="box"><input type="checkbox" onchange="checkBox('check_FollowUP12')"><span class="color2" dir="rtl"> في حالة ان العميل شحن عن طريق WE-App او E-Care وكان الدفع لسه مظهرش علي BSS وبلغنا العميل انه ينتظر ساعه من ميعادالدفع سواء للـ FV account او FBB account</span></label>
                              <br>
-                             <div id="script-11" class="scripts">
+                             <div id="check_FollowUP12" class="hidden script">
                                <ul dir="rtl">
                                  <p style="align-items: center; padding: 5px; width: fit-content;" > هنعرض علي العميل المتابعة عشان نتأكد ان المشكلة اتحلت معاه.</p>  
                                </ul>
@@ -2574,11 +2563,11 @@
                    <div class="lines"></div>
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////            IR              //////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
                     <div class="styleBox">
-                    <label class="texx"><input type="checkbox" id="check4" onchange="showandhid()" data-click="clickk"> IR Cases</label>
-                    <div class="hidden" id="hid4" dir="rtl">
-                    <label class="box"><input type="checkbox" id="q-12"><span class="color2" dir="rtl"> Delay Ticket</span></label>
+                    <label class="texx"><input type="checkbox"  onchange="checkBox('hidcheck5')" data-click="clickk"> IR Cases</label>
+                    <div class="hidden" id="hidcheck5" dir="rtl">
+                    <label class="box"><input type="checkbox" onchange="checkBox('check_IRcases')"><span class="color2" dir="rtl"> Delay Ticket</span></label>
                     <br>
-                    <div id="script-12" class="scripts">
+                    <div id="check_IRcases" class="hidden script">
                       <ul dir="rtl">
                         <li> Delay Ticket دي بعملها لما الشكوي تكون عدت الـ SLA بتعها</li>
                         <li>بنحسب الشكوي بدأت امتي من تاريخ انتقالها للـ IU في الـ Item logs</li>
@@ -2673,8 +2662,8 @@
                     </div>
                     <hr>
                     <!-- -------------------------------------------------------------------------- -->
-                    <label class="box"><input type="checkbox" id="q-36"><span class="color2" dir="rtl"> Rework</span></label>
-                    <div id="script-36" class="scripts">
+                    <label class="box"><input type="checkbox"  onchange="checkBox('check_Rework')"><span class="color2" dir="rtl"> Rework</span></label>
+                    <div id="check_Rework" class="hidden script">
                       <strong>طلب استعجال</strong>
                       <p style="border: 1px solid red; padding: 5px; width: fit-content;" > بعملها في حالة شكوي متكررة موجوده في الـ IU <mark>شرط ان لاتتعدي الشكوي الجديده وبين القديمه ال30 يوماً</mark></p> 
                       <li>نخلي بالنا اي عميل Voice only مبنعملش له طلب استعجال</li>
@@ -2720,8 +2709,8 @@
                             </div>
                           </div>
                         </div> <!-- /wrapper -->
-                      <label class="box"><input type="checkbox" id="q-37"><span class="color2" dir="rtl"> في حالة الشكوي مش واخده FCC ؟</span></label>
-                      <div id="script-37" class="scripts">
+                      <label class="box"><input type="checkbox" onchange="checkBox('check_FCC')"><span class="color2" dir="rtl"> في حالة الشكوي مش واخده FCC ؟</span></label>
+                      <div id="check_FCC" class="hidden script">
                         <li>هنستخدم الـ Force close من الـ BSS عشان نقفل الشكوي</li>
                         <li>Sitemap</li>
                         <li>Trouble Ticket</li>
@@ -2756,9 +2745,9 @@
                     </div>
                     <!-- -------------------------------------------------------------------------- -->
                     <hr>
-                    <label class="box"><input type="checkbox" id="q-13"><span class="color2" dir="rtl"> Port Time out/Acces denaied</span></label>
+                    <label class="box"><input type="checkbox" onchange="checkBox('check_Port_Time')"><span class="color2" dir="rtl"> Port Time out/Acces denaied</span></label>
                     <br>
-                    <div id="script-13" class="scripts">
+                    <div id="check_Port_Time" class="hidden script">
                       <ul dir="rtl">
                         <p style="border: 1px solid red; padding: 5px; width: fit-content;" > دي بعملها لما تكون الماتريكس جايبه Port Time out/Acces denaied والعميل معندوش outage </p> 
                         <p  style=" padding: 5px; width: fit-content;">وببلغ العميل الاسكريبت دا <mark>فيه عطل فني في خدمة الانترنت وان شاء الله الخدمه هتشتغل معانا في خلال ساعتين</mark></p>
@@ -2813,8 +2802,8 @@
                           <div class="lines"></div>
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////          Balance          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
                    <div class="styleBox">
-                <div><label class="texx"><input type="checkbox" id="check6" onchange="showandhid()" data-click="clickk"> Recharge (الشحن الخاطئ)   </label> <!-- &nbsp; &nbsp; <span id="upd" onclick="updeted2()" class="updated">Updated v2</span> --></div>
-                <div class="hidden" id="hid6" dir="rtl">
+                <div><label class="texx"><input type="checkbox" onchange="checkBox('hidcheck6')" data-click="clickk"> Recharge (الشحن الخاطئ)   </label> <!-- &nbsp; &nbsp; <span id="upd" onclick="updeted2()" class="updated">Updated v2</span> --></div>
+                <div class="hidden" id="hidcheck6" dir="rtl">
                   <p style="border: 1px solid red; padding: 5px; width: fit-content;">
                      دي في حالة ان فيه عميل عمل باقة اضافية بالغلط
                      <br>
@@ -2822,8 +2811,8 @@
                      <br>
                      او شحن رصيد لحساب الانترنت بدل الارضي والعكس
                   </p>
-                  <label class="box"><input type="checkbox" id="q-20"><span class="color2" dir="rtl"> الشروط</span></label>
-                  <div id="script-20" class="scripts">
+                  <label class="box"><input type="checkbox" onchange="checkBox('check_CondtionINBlance')"><span class="color2" dir="rtl"> الشروط</span></label>
+                  <div id="check_CondtionINBlance" class="hidden script">
                     <div style="padding-right: 15px; width: fit-content;">
                       <ol>
                         <li>لو اتضاف باقة اضافية او علي الباقة بالغلط لازم ميكونش مر اسبوع علي اضافة الباقة</li>
@@ -2841,8 +2830,8 @@
                     </div>
                   </div>
                   <br>
-                  <label class="box"><input type="checkbox" id="q-21"><span class="color2" dir="rtl"> Agent Action(OJT)</span></label>
-                  <div id="script-21" class="scripts">
+                  <label class="box"><input type="checkbox" onchange="checkBox('check_OJT')"><span class="color2" dir="rtl"> Agent Action(OJT)</span></label>
+                  <div id="check_OJT" class="hidden script">
                     <div style="padding-right: 15px; text-align: left;">
                       <ol class="ol_21">
                         <li> هنفتح الـ IR</li>
@@ -2981,13 +2970,13 @@
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////           CHARGE          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
                     <div class="lines"></div>
                           <div class="styleBox">
-                            <div>  <label class="texx"><input type="checkbox" id="check7" onchange="showandhid()" data-click="clickk"> في حالة الرصيد مسمعش</label>   <!--&nbsp; &nbsp;<span id="upd" onclick="updeted2()" class="updated">Updated v2</span> --> </div> 
-                            <div class="hidden" id="hid7" dir="rtl" >
+                            <div>  <label class="texx"><input type="checkbox" onchange="checkBox('hidcheck7')" data-click="clickk"> في حالة الرصيد مسمعش</label>   <!--&nbsp; &nbsp;<span id="upd" onclick="updeted2()" class="updated">Updated v2</span> --> </div> 
+                            <div class="hidden" id="hidcheck7" dir="rtl" >
                           
                             
                           
-                              <label class="box"><input type="checkbox" id="q-24"><span class="color2" dir="rtl"> ماكينات الدفع</span></label>
-                              <div id="script-24" class="scripts">
+                              <label class="box"><input type="checkbox" onchange="checkBox('check_Payment')"><span class="color2" dir="rtl"> ماكينات الدفع</span></label>
+                              <div id="check_Payment" class="hidden script">
                                 <p style="border: 1px solid red; padding: 5px; width: fit-content;">
                                   هبلغ العميل انه يستني ساعتين من وقت الشحن ومنسجلش اي شكوي قبل المده دي
                                 </p>
@@ -3014,8 +3003,8 @@
                             
                                   </tbody>
                                 </table>
-                                <label class="box"><input type="checkbox" id="q-25"><span class="color2" dir="rtl"> البيانات المطلوبة في الـ TT</span></label>
-                                <div id="script-25" class="scripts">
+                                <label class="box"><input type="checkbox" onchange="checkBox('check_TTPyment')"><span class="color2" dir="rtl"> البيانات المطلوبة في الـ TT</span></label>
+                                <div id="check_TTPyment" class="hidden script">
                                   <div style=" text-align: right;">
                                     <li>اسم الشركة</li>
                                     <li>رقم الخدمة المثبت في الايصال</li>
@@ -3038,8 +3027,8 @@
                             
                               </div>
                               <hr>
-                              <label class="box"><input type="checkbox" id="q-35"><span class="color2" dir="rtl"> WE App - E Care</span></label>
-                              <div id="script-35" class="scripts">
+                              <label class="box"><input type="checkbox" onchange="checkBox('check_weApp')"><span class="color2" dir="rtl"> WE App - E Care</span></label>
+                              <div id="check_weApp" class="hidden script">
                                 <div style="padding: 5px; width: fit-content;">
                                   هبلغ العميل انه يستني 1 ساعة من وقت الشحن في حالة الدفع عن طريق الموقع او التطبيق
                                   <hr>
@@ -3093,8 +3082,8 @@
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////           Fraction          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
                    <div class="lines"></div>
                           <div class="styleBox">
-                            <div>  <label class="texx"><input type="checkbox" id="check8" onchange="showandhid()" data-click="clickk"> Balance Fraction</label> <!--&nbsp; &nbsp;<span class="new">New</span> --> </div> 
-                            <div class="hidden" id="hid8" dir="rtl">
+                            <div>  <label class="texx"><input type="checkbox"  onchange="checkBox('hidcheck8')" data-click="clickk"> Balance Fraction</label> <!--&nbsp; &nbsp;<span class="new">New</span> --> </div> 
+                            <div class="hidden" id="hidcheck8" dir="rtl">
                              <p style="outline: 1px solid red; padding: 3px;">بنستخدمها في حالة عدم اكتمال طلب العميل بسبب فرق الرصيد</p>
                              <li> بنضيف 1 جنيه بحد اقصي للـ WE ardy 25 </li>
                              <li> بنضيف 3 جنيه بحد اقصي لكل الباقات الاخري </li>
@@ -3150,12 +3139,12 @@
   <!-- //////////////////////////////////////////////////////////////////FTTH//////////////////////////////////////////////////////////////////// -->
                      <div class="lines"></div>
                       <div class="styleBox">
-                            <div>  <label class="texx"><input type="checkbox" id="check9" onchange="showandhid()" data-click="clickk"> FTTH</label> &nbsp; &nbsp;<span class="new">New</span> </div> 
-                            <div class="hidden" id="hid9" dir="rtl">
+                            <div>  <label class="texx"><input type="checkbox" onchange="checkBox('hidcheck9')" data-click="clickk"> FTTH</label> &nbsp; &nbsp;<span class="new">New</span> </div> 
+                            <div class="hidden" id="hidcheck9" dir="rtl">
                               <p><span style="background: #1ee71a;">Wiki</span> Sales => FTTH => FTTH Migration</p>
 
-                              <label class="box"><input type="checkbox" id="q-40"><span class="color2" dir="rtl">Check Availablity</span></label>
-                              <div id="script-40" class="scripts">
+                              <label class="box"><input type="checkbox" onchange="checkBox('check_AvailablityFTTH')"><span class="color2" dir="rtl">Check Availablity</span></label>
+                              <div id="check_AvailablityFTTH" class="hidden script">
                                 <p>هنا بشوف العميل متاح ليه يشترك علي الفايبر ولا لا</p>
                                 <div dir="ltr">
                                   <ol>
@@ -3288,11 +3277,11 @@
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
                            <div class="lines"></div>
                           <div class="styleBox">
-                            <div>  <label class="texx"><input type="checkbox" id="check10" onchange="showandhid()" data-click="clickk"> Suspend & Port</label> &nbsp; &nbsp;<span class="new">New</span> </div> 
-                            <div class="hidden" id="hid10" dir="rtl">
+                            <div>  <label class="texx"><input type="checkbox" onchange="checkBox('hidcheck10')" data-click="clickk"> Suspend & Port</label> &nbsp; &nbsp;<span class="new">New</span> </div> 
+                            <div class="hidden" id="hidcheck10" dir="rtl">
 
-                              <label class="box"><input type="checkbox" id="q-41"><span class="color2" dir="rtl"> Suspend and bar </span></label>
-                              <div id="script-41" class="scripts">
+                              <label class="box"><input type="checkbox" onchange="checkBox('check_Suspend')"><span class="color2" dir="rtl"> Suspend and bar </span></label>
+                              <div id="check_Suspend" class="hidden script">
                                 <p>
                                   في حالة كنا عايزين نوقف الخط بشكل مؤقت عشان نعمل باقة اعلي للعميل
                                 </p>
@@ -3319,8 +3308,8 @@
                               </div>
                               <hr>
                               <!--  -->
-                              <label class="box"><input type="checkbox" id="q-42"><span class="color2" dir="rtl"> Change Port </span></label>
-                              <div id="script-42" class="scripts">
+                              <label class="box"><input type="checkbox" onchange="checkBox('check_Port')"><span class="color2" dir="rtl"> Change Port </span></label>
+                              <div id="check_Port" class="hidden script">
                                 <p> في حالة اراد العميل تغير البورت لـ VDSL لازم يكلمنا قبل معاد التجديد بسبعة ايام</p>
                                 <ul dir="ltr">
                                   <li>BSS</li>
